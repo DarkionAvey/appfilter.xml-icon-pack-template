@@ -2,8 +2,9 @@ name: Populate buffer
 
 on:
   push:
-    branches:
-      - master
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
 
 jobs:
     fetch:
