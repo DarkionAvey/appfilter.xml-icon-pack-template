@@ -8,3 +8,6 @@ A complete list of ``appfilter.xml``. Your next icon pack starts here
 
 # License
 You can do whatever you want with the ``appfilter.xml``
+
+
+[![Populate buffer](https://github.com/DarkionAvey/appfilter.xml-icon-pack-template/actions/workflows/bufferer.yml/badge.svg)](https://github.com/DarkionAvey/appfilter.xml-icon-pack-template/actions/workflows/bufferer.yml)
