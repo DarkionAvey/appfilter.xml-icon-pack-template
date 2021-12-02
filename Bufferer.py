@@ -29,11 +29,16 @@ def write_buffer(existing_buffer_url, sheet_url):
 
     for item in new_rows:
         if len(item) > 0:
+            definition_segments = item.split("/")
+            # this fixes a bug in an older version of the dashboard app
+            if len(definition_segments) > 2:
+                item = definition_segments[-2] + "/" + definition_segments[-1]
             new_file_contents += item + "\n"
 
-    f = open("buffered_feed", "w")
-    f.write(new_file_contents)
-    f.close()
+    if len(new_file_contents) > 0:
+        f = open("buffered_feed", "w")
+        f.write(new_file_contents)
+        f.close()
 
 
 if __name__ == "__main__":
